@@ -7,9 +7,9 @@ int main()
 
     scanf("%d", &a);
 
-    result = (a / 100) * ((a % 100) / 10 ) * (a % 10);
+    result = ((a / 100) % 10) * ((a / 10) % 10 ) * (a % 10);
 
-    printf("%d \n", result);
+    printf("%d\n", result);
 
     return 0;
 }
