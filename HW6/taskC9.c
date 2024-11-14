@@ -1,12 +1,12 @@
 #include <stdio.h>
 
-int sum(int n)
+int factorial(int n)
 {
-    int result = 0;
+    int result = 1;
 
     for (int i = 1; i <= n; i++)
     {
-        result += i;
+        result *= i;
     }
 
     return result;
@@ -19,7 +19,7 @@ int main(void)
 
     scanf("%d", &n);
 
-    printf("%d", sum(n));
+    printf("%d", factorial(n));
 
     return 0;
 }
